@@ -18,10 +18,10 @@ export const experience: ExperienceItem[] = [
   },
   {
     id: "edu-1",
-    title: "TODO: Education / Degree",
-    organization: "TODO: University Name",
-    date: "TODO: Date",
-    description: "TODO: Add relevant coursework or achievements.",
+    title: "B.E. Computer Science and Engineering (3rd Year)",
+    organization: "V.S.B. College of Engineering Technical Campus",
+    date: "2024 - 2028",
+    description: "Currently pursuing a degree in Computer Science, focusing on software engineering, algorithms, and cybersecurity.",
     category: "Education"
   }
 ];

@@ -105,12 +105,16 @@ const Hero = () => {
             
             {/* The Headshot Container */}
             <div className="absolute inset-0 rounded-2xl border border-white/10 bg-surface/80 overflow-hidden glass-panel flex flex-col items-center justify-center">
-              {/* Replace with actual image tag once available: 
-                  <img src="/headshot.jpg" alt="Bharani" className="w-full h-full object-cover opacity-90" />
-              */}
-              <Shield size={64} className="text-zinc-700 mb-4" />
-              <p className="font-mono text-sm text-zinc-500 uppercase tracking-widest">[ IDENTITY_VERIFIED ]</p>
-              <p className="font-mono text-xs text-zinc-600 mt-2">Replace with professional headshot</p>
+              <img 
+                src="/headshot.png" 
+                alt="Bharani" 
+                className="w-full h-full object-cover opacity-90 contrast-125 saturate-50 mix-blend-luminosity brightness-110" 
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80 pointer-events-none"></div>
+              <div className="absolute inset-0 bg-neon-cyan/10 mix-blend-overlay pointer-events-none"></div>
+              <div className="absolute bottom-4 left-0 w-full text-center pointer-events-none z-10">
+                <p className="font-mono text-sm text-neon-cyan uppercase tracking-widest drop-shadow-[0_0_5px_rgba(0,240,255,0.8)]">[ IDENTITY_VERIFIED ]</p>
+              </div>
             </div>
             
             {/* Decorative tech corners */}
