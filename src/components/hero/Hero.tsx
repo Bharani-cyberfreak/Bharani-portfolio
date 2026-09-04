@@ -106,12 +106,12 @@ const Hero = () => {
             {/* The Headshot Container */}
             <div className="absolute inset-0 rounded-2xl border border-white/10 bg-surface/80 overflow-hidden glass-panel flex flex-col items-center justify-center">
               <img 
-                src="/headshot.png" 
+                src="/headshot.jpg" 
                 alt="Bharani" 
-                className="w-full h-full object-cover opacity-90 contrast-125 saturate-50 mix-blend-luminosity brightness-110" 
+                className="w-full h-full object-cover opacity-100 contrast-[1.05]" 
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80 pointer-events-none"></div>
-              <div className="absolute inset-0 bg-neon-cyan/10 mix-blend-overlay pointer-events-none"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent opacity-90 pointer-events-none"></div>
+              <div className="absolute inset-0 bg-neon-cyan/5 mix-blend-screen pointer-events-none"></div>
               <div className="absolute bottom-4 left-0 w-full text-center pointer-events-none z-10">
                 <p className="font-mono text-sm text-neon-cyan uppercase tracking-widest drop-shadow-[0_0_5px_rgba(0,240,255,0.8)]">[ IDENTITY_VERIFIED ]</p>
               </div>
