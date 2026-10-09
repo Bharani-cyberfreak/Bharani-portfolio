@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { AnimatePresence, motion, useMotionValue, useSpring } from 'framer-motion';
+import { AnimatePresence, motion, useMotionValue } from 'framer-motion';
 import { useFinePointer, useReducedMotionPref } from '../hooks/useMedia';
 
 const LABELS: Record<string, string> = { view: 'VIEW', play: '▶', link: '↗', drag: '↔', close: '✕' };
@@ -15,8 +15,7 @@ export default function CustomCursor() {
 
   const x = useMotionValue(-100);
   const y = useMotionValue(-100);
-  const sx = useSpring(x, { stiffness: 600, damping: 40, mass: 0.4 });
-  const sy = useSpring(y, { stiffness: 600, damping: 40, mass: 0.4 });
+
   const [mode, setMode] = useState<string | null>(null);
   const [hoverLink, setHoverLink] = useState(false);
   const [visible, setVisible] = useState(false);
@@ -58,7 +57,7 @@ export default function CustomCursor() {
     <motion.div
       aria-hidden
       className="pointer-events-none fixed left-0 top-0 z-[200] flex items-center justify-center rounded-full"
-      style={{ x: sx, y: sy, translateX: '-50%', translateY: '-50%' }}
+      style={{ x, y, translateX: '-50%', translateY: '-50%' }}
       animate={{
         width: size,
         height: size,

@@ -12,10 +12,10 @@ export const profile = {
   location: 'Security Builder',
   email: 'cyberfreak833@gmail.com',
   links: {
-    linkedin: 'https://www.linkedin.com/in/bharanidharand/',
+    linkedin: 'https://www.linkedin.com/in/bharanidharan-d/',
     github: 'https://github.com/Bharani-cyberfreak',
   },
-  resumePdf: '#',
+  resumePdf: '/Bharanidharan_Resume.pdf',
   portrait: {
     src: '/headshot.jpg',
     srcSet: '/headshot.jpg',
