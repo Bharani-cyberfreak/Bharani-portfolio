@@ -1,9 +1,9 @@
 export type Palette = { from: string; via: string; to: string; accent: string };
 
 export const profile = {
-  fullName: 'Bharani',
-  displayName: 'Bharani',
-  firstName: 'BHARANI',
+  fullName: 'Bharanidharan',
+  displayName: 'Bharanidharan',
+  firstName: 'BHARANIDHARAN',
   seriesTag: 'THE SERIES',
   originalLabel: 'A CYBERSECURITY ORIGINAL',
   role: 'Cybersecurity Engineer',
@@ -293,7 +293,7 @@ export const introSlides: IntroSlide[] = [
   },
 ];
 
-export type ProfileId = 'sushmita' | 'recruiter' | 'developer' | 'creative';
+export type ProfileId = 'bharani' | 'recruiter' | 'developer' | 'creative';
 export type SectionId = 'about' | 'journey' | 'originals' | 'picks' | 'skills' | 'moments' | 'story';
 
 export const viewerProfiles: {
@@ -304,8 +304,8 @@ export const viewerProfiles: {
   order: SectionId[];
 }[] = [
   {
-    id: 'sushmita',
-    name: 'Bharani',
+    id: 'bharani',
+    name: 'Bharanidharan',
     blurb: 'The full series, in order',
     color: '#e5132b',
     order: ['about', 'journey', 'originals', 'picks', 'skills', 'moments', 'story'],
