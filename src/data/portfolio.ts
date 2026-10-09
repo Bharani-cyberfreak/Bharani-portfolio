@@ -66,79 +66,79 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: 'vulnradar',
-    title: 'VulnRadar',
+    id: 'cyber-rag',
+    title: 'Personal Cybersecurity Knowledge RAG',
     year: '2026',
-    genre: 'Security Tools • VAPT',
-    logline: 'Automated vulnerability scanner for rapid assessment and reporting.',
-    stack: ['Python', 'FastAPI', 'PostgreSQL'],
+    genre: 'AI • Cybersecurity',
+    logline: 'Retrieval-augmented generation application delivering context-aware cybersecurity answers.',
+    stack: ['Flask', 'ChromaDB', 'Claude API'],
     build: [
-      'Uses asynchronous Python to orchestrate multiple scanning engines simultaneously.',
-      'Aggregating results into a central PostgreSQL database.',
+      'Built from scratch with a Flask backend and ChromaDB vector store.',
+      'Integrated Claude API to deliver source-grounded answers over a curated knowledge base.',
     ],
     features: [
-      'Automated scanning',
-      'Rapid assessment reporting',
-      'Async Python orchestration',
-      'PostgreSQL aggregation',
+      'Retrieval-Augmented Generation',
+      'Context-aware AI answers',
+      'Custom dark-themed terminal UI',
+      'Vector DB integration',
     ],
     metrics: [
-      { value: 'Fast', label: 'Scanning Speed' },
-      { value: 'Async', label: 'Architecture' },
-      { value: 'Central', label: 'Database' },
-      { value: 'Python', label: 'Engine' },
+      { value: 'AI', label: 'Powered' },
+      { value: 'Claude', label: 'LLM' },
+      { value: 'ChromaDB', label: 'Vector Store' },
+      { value: 'Flask', label: 'Backend' },
     ],
     palette: { from: '#2a0610', via: '#7a0f24', to: '#0b0710', accent: '#ff3d5a' },
     motif: 'shield',
   },
   {
-    id: 'secureflow',
-    title: 'SecureFlow',
+    id: 'password-analyzer',
+    title: 'Password Strength Analyzer',
     year: '2026',
-    genre: 'Cloud Infrastructure • Security',
-    logline: 'API security gateway middleware designed for enterprise deployments.',
-    stack: ['Python', 'FastAPI', 'Redis'],
+    genre: 'Security Tools • Analysis',
+    logline: 'OOP-based architecture evaluating password strength using the zxcvbn library.',
+    stack: ['Python', 'Streamlit', 'ReportLab'],
     build: [
-      'Implements high-performance rate limiting and WAF rules at the API gateway layer.',
-      'Uses Redis for distributed state.',
+      'Designed an interactive Streamlit interface for password evaluation.',
+      'Implemented automated PDF report generation with ReportLab.',
     ],
     features: [
-      'API gateway middleware',
-      'Rate limiting',
-      'WAF rules',
-      'Redis distributed state',
+      'zxcvbn strength evaluation',
+      'Interactive UI',
+      'Automated PDF reports',
+      'OOP architecture',
     ],
     metrics: [
-      { value: 'High', label: 'Performance' },
-      { value: 'WAF', label: 'Rules' },
-      { value: 'Redis', label: 'State' },
-      { value: 'Enterprise', label: 'Scale' },
+      { value: 'zxcvbn', label: 'Engine' },
+      { value: 'PDF', label: 'Reporting' },
+      { value: 'Streamlit', label: 'Frontend' },
+      { value: 'Python', label: 'Backend' },
     ],
     palette: { from: '#04121f', via: '#0f4c6e', to: '#05080d', accent: '#4cc9ff' },
     motif: 'flow',
   },
   {
-    id: 'threatboard',
-    title: 'ThreatBoard',
+    id: 'network-scanner',
+    title: 'Network Vulnerability Scanner',
     year: '2026',
-    genre: 'Security Tools • Intelligence',
-    logline: 'Threat intelligence dashboard aggregating data from various OSINT sources.',
-    stack: ['Python', 'React', 'OSINT APIs'],
+    genre: 'Offensive Security • Tools',
+    logline: 'Python-based scanner leveraging Nmap to identify open ports and vulnerabilities.',
+    stack: ['Python', 'Nmap', 'Metasploitable2'],
     build: [
-      'A React frontend consuming a Python backend.',
-      'Normalizes data from 10+ different OSINT feeds.',
+      'Developed a Python tool automating Nmap scans for target hosts.',
+      'Tested and validated detection logic against a Metasploitable2 environment.',
     ],
     features: [
-      'Threat intelligence',
-      'OSINT data aggregation',
-      'React dashboard',
-      'Python normalization backend',
+      'Automated port scanning',
+      'Vulnerability identification',
+      'Metasploitable2 validated',
+      'Nmap integration',
     ],
     metrics: [
-      { value: '10+', label: 'OSINT feeds' },
-      { value: 'React', label: 'Frontend' },
-      { value: 'Python', label: 'Backend' },
-      { value: 'Real-time', label: 'Intelligence' },
+      { value: 'Nmap', label: 'Core' },
+      { value: 'Validated', label: 'Accuracy' },
+      { value: 'Python', label: 'Automation' },
+      { value: 'Offensive', label: 'Security' },
     ],
     palette: { from: '#1a0d02', via: '#8a4a07', to: '#0a0806', accent: '#ffb547' },
     motif: 'tenants',
@@ -156,17 +156,30 @@ export type Achievement = {
 
 export const achievements: Achievement[] = [
   {
-    id: 'cyber',
-    title: 'Security Tools Developer',
-    org: 'Independent',
-    detail: 'Building enterprise-grade tools like VulnRadar and SecureFlow.',
-    laurel: 'Engineering',
+    id: '100days',
+    title: '100 Days Badge',
+    org: 'LeetCode',
+    detail: 'Solved 100+ consecutive days of problems on LeetCode (Java)',
+    laurel: 'Problem Solving',
+  },
+  {
+    id: 'publication',
+    title: 'Research Publication',
+    org: 'IJDDT',
+    detail: 'Efficient Verifiable Search over Encrypted IoT Data with Merkle Tree-Based Integrity and Pattern Privacy',
+    laurel: 'Research',
   }
 ];
 
 export type Certification = { issuer: string; name: string; link: string };
 
 export const certifications: Certification[] = [
+  { issuer: 'Infosys Springboard', name: 'Data Structures & Algorithms using Python', link: '#' },
+  { issuer: 'Infosys Springboard', name: 'SQL Developer', link: '#' },
+  { issuer: 'Infosys Springboard', name: 'Python Foundation', link: '#' },
+  { issuer: 'Infosys Springboard', name: 'Cloud Computing', link: '#' },
+  { issuer: 'Hackviser', name: 'Certified Cybersecurity Foundation', link: '#' },
+  { issuer: 'Cappriciosec University', name: 'Certified Ethical Hacking & Penetration Testing (CEHPT)', link: '#' },
 ];
 
 export type Skill = { name: string; mono: string; note?: string };
@@ -202,18 +215,18 @@ export const skillCategories: SkillCategory[] = [
     subtitle: 'Software Engineering',
     skills: [
       { name: 'Python', mono: 'Py' },
+      { name: 'Java', mono: 'Ja' },
+      { name: 'Flask', mono: 'Fl' },
       { name: 'FastAPI', mono: 'Fa' },
-      { name: 'PostgreSQL', mono: 'Pg' },
     ],
   }
 ];
 
 export const skillEvidence: Record<string, string[]> = {
-  Python: ['VulnRadar', 'SecureFlow', 'ThreatBoard', 'AutoRecon'],
-  FastAPI: ['VulnRadar', 'SecureFlow'],
-  PostgreSQL: ['VulnRadar'],
-  'Offensive Security': ['VAPT'],
-  'Defensive Security': ['Security Automation'],
+  Python: ['Cyber RAG', 'Password Analyzer', 'Network Scanner'],
+  Flask: ['Cyber RAG'],
+  'Offensive Security': ['Network Scanner'],
+  'Defensive Security': ['Password Analyzer'],
 };
 
 export type Episode = { code: string; title: string; description: string; tags: string[]; runtime: string; palette: Palette; };
@@ -263,10 +276,10 @@ export const seasons: Season[] = [
 export type TopPick = { label: string; title: string; detail: string; palette: Palette };
 
 export const topPicks: TopPick[] = [
-  { label: 'Security Tools', title: 'VulnRadar', detail: 'Automated vulnerability scanner', palette: crimson },
-  { label: 'Cloud Infra', title: 'SecureFlow', detail: 'API security gateway middleware', palette: ocean },
-  { label: 'Threat Intel', title: 'ThreatBoard', detail: 'OSINT dashboard', palette: amber },
-  { label: 'Recon', title: 'AutoRecon', detail: 'Automation suite', palette: violet },
+  { label: 'AI & Security', title: 'Cyber RAG', detail: 'Knowledge retrieval app', palette: crimson },
+  { label: 'Tooling', title: 'Password Analyzer', detail: 'Strength evaluation engine', palette: ocean },
+  { label: 'Offensive', title: 'Network Scanner', detail: 'Nmap vulnerability automation', palette: amber },
+  { label: 'Problem Solving', title: 'LeetCode 100', detail: '100 Days Badge', palette: violet },
   { label: 'Engineering', title: 'Python', detail: 'Primary development language', palette: jade },
   { label: 'Core Skill', title: 'VAPT', detail: 'Vulnerability Assessment & Penetration Testing', palette: crimson },
 ];
@@ -289,7 +302,7 @@ export const introSlides: IntroSlide[] = [
   {
     kicker: 'Projects',
     title: 'Security Tools',
-    lines: ['VulnRadar, SecureFlow, ThreatBoard', 'Building next-gen enterprise security solutions'],
+    lines: ['Cybersecurity RAG, Password Analyzer, Network Scanner', 'Building next-gen enterprise security solutions'],
   },
 ];
 
