@@ -37,14 +37,14 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
   const glowX = useTransform(px, [-1, 1], ['-6%', '6%']);
 
   const meta = [
-    education[0].period.split(' – ')[0].split(' ')[1] + ' – Present',
+    `${education[0].period.split(' – ')[0]} – Present`,
     'B.E. CSE',
     `${projects.length} Originals`,
     `${certifications.length} Certifications`,
   ];
 
   const floating = [
-    { text: education[0].score, sub: 'B.E. CSE', pos: 'left-[2%] top-[30%]', depth: 1 },
+    { text: education[0].score, sub: 'B.E. CSE', pos: 'left-[8%] top-[12%]', depth: 1 },
     { text: `${achievements[0].title}`, sub: achievements[0].org, pos: 'right-[0%] top-[18%]', depth: -1 },
     { text: 'Python · FastAPI · PostgreSQL', sub: 'Primary stack', pos: 'right-[4%] bottom-[24%]', depth: 0.6 },
   ];
